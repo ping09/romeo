@@ -4,3 +4,7 @@
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
+@mixin padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}

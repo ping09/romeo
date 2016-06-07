@@ -1,0 +1,31 @@
+$white: #fff;
+$black: #222222;
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  padding: 0px !important;
+  margin: 0px !important;
+  font-family: 'Lato', 'Open Sans';
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-size: 25px;
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
+}
+
+// overriding bootstrap default container & col
+.container{
+  padding: {
+    top: 0px;
+    left: 0px;
+  }
+}
