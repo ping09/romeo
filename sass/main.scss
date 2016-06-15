@@ -1,4 +1,8 @@
 // @import "compass";
+@font-face {
+  font-family: 'Helvetica Neue';
+  src:  url('HelveticaNeueBold.ttf') format('ttf'),
+}
 @import "../bourbon/bourbon";
 @import "_mixin.scss";
 @import "_global.scss";
@@ -9,5 +13,6 @@
 @import "_screen.scss";
 @import "_social_menu.scss";
 @import "_about_me.scss";
-@import "_check_this_out.scss";
+@import "_as_seen_in.scss";
 @import "_covers.scss";
+@import "_blog.scss";

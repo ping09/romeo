@@ -1,0 +1,108 @@
+.covers .container{
+  padding-bottom: 150px;
+  .col-md-12{
+    padding: {
+      left: 0;
+      right: 0;
+    }
+  }
+  .col-md-4{
+    padding: {
+      left: 5px;
+      right: 5px;
+    }
+  }
+   .col-xs-12{
+     padding-top: 5px;
+     padding-bottom: 5px;
+   }
+}
+
+.covers_title{
+    padding: {
+    top:152px;
+    bottom: 42px;
+  }
+  h2{
+    text-align: center;
+    span{
+      font-size: 40px;
+      color:$black;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      position: relative;
+      &:after{
+        content:"";
+        position: absolute;
+        bottom:50%;
+        right:100%;
+        width: 80px;
+        height: 3px;
+        background-color: $black;
+      }
+    }
+  }
+}
+// 3d flippling effect
+
+.flip-container{
+  -webkit-perspective:1000;
+  -moz-perspective:1000;
+  -ms-perspective:1000;
+  -o-perspective:1000;
+  perspective:1000;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  .card{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.01) inset;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    @include transition(all 0.7s  $ease-in-out-back);
+    position: relative;
+    @include box-sizing;
+    color: $black;
+    border-radius: none;
+    &:hover{
+      transform: rotateY(180deg);
+    }
+    .front, .back{
+      -webkit-backface-visibility:hidden;
+      -moz-backface-visibility:hidden;
+      -ms-backface-visibility:hidden;
+       -o-backface-visibility:hidden;
+          backface-visibility:hidden;
+
+    }
+    .front{
+      height: 100%;
+      width: 100%;
+      transform: rotateY(0deg);
+      h3{
+        line-height: 100px;
+      }
+    }
+    .back{
+      @include box-sizing();
+      transform: rotateY(180deg);
+      position: absolute;
+      top: 10%;
+      right: 5%;
+      left: 5%;
+      bottom: 5%;
+      @include box-sizing;
+      li{
+        list-style-type: none;
+        font-weight: 700;
+        font-size: 17px;
+        padding: 9px 10px;
+        @include float();
+        font-family: 'PT Sans Narrow', sans-serif;
+      }
+
+    }
+  }
+}

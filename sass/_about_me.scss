@@ -1,0 +1,55 @@
+.about-me{
+  background-color: #f7f7f1;
+  height: 782px;
+  @include box-sizing;
+}
+.about_me_title{
+    padding: {
+    top:152px;
+    bottom: 42px;
+  }
+  h2{
+    text-align: center;
+    span{
+      font-size: 40px;
+      color:$black;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      position: relative;
+      &:after{
+        content:"";
+        position: absolute;
+        bottom:50%;
+        right:100%;
+        width: 80px;
+        height: 3px;
+        background-color: $black;
+      }
+    }
+  }
+}
+.about-me-content{
+  @include box-sizing;
+  .avatar{
+    position: relative;
+    img{
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+
+  }
+
+  .am_inner_content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding-left: 55%;
+    text-align: justify;
+    p{
+      font-family:  'Open Sans', sans-serif;
+      font-size: 15px;
+      color: $black;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}
