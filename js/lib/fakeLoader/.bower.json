@@ -24,11 +24,11 @@
     "tests",
     "Demo"
   ],
-  "_release": "6daaa01b3c",
+  "_release": "0e16f0de18",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "6daaa01b3c7dc6a462ec4dfc8d782affd0b1ff84"
+    "commit": "0e16f0de184f84fc7cceb4af984df3172423fb70"
   },
   "_source": "https://github.com/joaopereirawd/fakeLoader.js.git",
   "_target": "*",

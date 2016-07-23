@@ -1,0 +1,210 @@
+#git{
+  @include box-sizing();
+}
+.get_in_touch{
+  padding-bottom: 50px;
+}
+.get_in_touch .contact_title{
+    padding: {
+    top:80px;
+    bottom: 42px;
+
+    }
+    h2{
+      font-size: 40px;
+      color:$black;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      span{
+        padding-bottom: 10px;
+        position: relative;
+        font-size: 40px;
+        color:$black;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        &::before{
+          content:"";
+          position: absolute;
+          bottom:50%;
+          left: 105%;
+          width: 60px;
+          height: 3px;
+          background-color: $black;
+        }
+      }
+    }
+    h3{
+      font-size: 40px;
+      color:$black;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      padding-left: 11%;
+      font-weight: 700;
+    }
+}
+
+// address
+.address .address_title{
+  padding-bottom: 20px;
+  h6{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: $black;
+    font-weight: 700;
+  }
+}
+
+// contact_info
+.contact_info{
+  li{
+    list-style-type: none;
+    padding: 5px;
+    i{
+      margin-right: 10px;
+    }
+    .fa-mobile{
+      font-size: 25px;
+    }
+    span{
+      font-size: 15px;
+      color: $black;
+      font-family: 'Source Sans Pro', sans-serif;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// modal button
+.modal_form{
+  .button{
+    padding: 10px 0px;
+    a{
+      text-decoration: none;
+      color: #666;
+      background-color: #e1e1e1;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .hvr-icon-forward{
+      padding: 10px 30px;
+    }
+  }
+}
+
+// address_social_menu
+.address_social_menu{
+box-sizing: border-box;
+color: $black;
+padding-top: 5%;
+}
+
+.address_social_menu li {
+  list-style-type:none;
+  display: inline-block;
+padding: 0px 10px;
+}
+.address_social_menu li a{
+  text-align: center;
+  border-radius: 2px;
+  color: $black;
+  font-size: 20px;
+  @include float();
+}
+
+
+
+
+
+
+
+
+// modal
+.modal_close{
+  @include box-sizing();
+  padding: 3em 48%;
+}
+#btn-close-modal{
+  background-color: $white;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  @include transition(all 0.3s $ease-out-back);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.close_container{
+  @include box-sizing();
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  .close_inner{
+    margin-top: 45%;
+    width: 100%;
+    height: 2px;
+    position: relative;
+    @include transition(all 0.5s ease-in-out);
+    &::after,&::before{
+      content: "";
+      top:0px;
+      left: 0px;
+      position: absolute;
+      background-color: $black;
+      width: 100%;
+      height: 2px;
+      @include transform(rotate(45deg));
+    }
+    &::after{
+      @include transform(rotate(-45deg));
+    }
+  }
+}
+
+#btn-close-modal:hover{
+  @include transform(rotate(45deg));
+}
+.modal-content{
+  background-color: rgb(57, 190, 185);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+// form
+
+.form{
+  padding: 1em 30%;
+}
+
+.form-control{
+  border-radius: 0;
+}
+
+label{
+  color: $white;
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input[type="placeholder"] {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $black;
+}
+
+.btn-primary{
+  border-radius: 0;
+background: #fff;
+border: none;
+color: $black;
+padding: 10px 20px;
+text-transform: uppercase;
+font-weight: 700;
+font-family: 'Source Sans Pro', sans-serif;
+@include transition(all 0.3s $ease-out-back);
+&:hover{
+  background: $white;
+  color: rgb(57, 190, 185);
+}
+}

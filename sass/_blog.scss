@@ -1,0 +1,199 @@
+#blog, .post{
+  @include clearfix();
+}
+#blog .blog_title{
+    padding: {
+    top:100px;
+    bottom: 42px;
+    }
+    h2{
+      font-size: 40px;
+      color:$black;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      span{
+        padding-bottom: 10px;
+        position: relative;
+        font-size: 40px;
+        color:$black;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        &::before{
+          content:"";
+          position: absolute;
+          bottom:50%;
+          left: 105%;
+          width: 80px;
+          height: 3px;
+          background-color: $black;
+        }
+      }
+    }
+    h3{
+      font-size: 40px;
+      color:$black;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: 'Open Sans', sans-serif;
+      padding-left: 13%;
+    }
+}
+#blog{
+  .col-md-6{
+    padding: {
+      left: 2px;
+      right: 2px;
+      bottom: 4px;
+    }
+  }
+  .ft_img img{
+    position: relative;
+  }
+
+  .inner_content{
+    @include box-sizing();
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 40px;
+    margin-top: 40px;
+    .post_title{
+      box-sizing: border-box;
+      padding: 1.5rem;
+      background-color: hsla(0,0%,100%,.9);
+      border-left: 5px solid hsla(0,0%,0%,1);
+    }
+  }
+
+  .post_title h4{
+    a{
+      text-decoration: none;
+      font-size: 22px;
+      margin: 0 0 10px;
+      text-align: left;
+      line-height: 1em;
+      padding: 0;
+      color: #000;
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  .post_title p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+}
+
+
+// blog  page title
+._bp .title{
+  padding-top: 20%;
+  h2{
+    font-size: 40px;
+    color:$white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    span{
+      padding-bottom: 10px;
+      position: relative;
+      font-size: 40px;
+      color:$white;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      &::before{
+        content:"";
+        position: absolute;
+        bottom:50%;
+        left: 105%;
+        width: 80px;
+        height: 5px;
+        background-color: $white;
+      }
+    }
+  }
+  h3{
+    font-size: 40px;
+    color:$white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 13%;
+  }
+}
+
+// back to home page inner_content
+.back{
+  padding-top: 5%;
+  a{
+    color: $white;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    background-color: hsla(0,0%,0%,.8);
+    cursor: pointer;
+    @include transition(all 0.5s $ease-out-quint);
+    &:hover{
+      background-color: hsla(0,0%,100%,.2);
+    }
+    img{
+      padding-top: 15%;
+      color: transparent;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.forward{
+  padding-top: 5%;
+  a{
+    color: $white;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    @include transition(all 0.5s $ease-out-quint);
+    background-color: hsla(0,0%,0%,.8);
+    cursor: pointer;
+    img{
+      cursor: pointer;
+      padding-top: 15%;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// read more 
+.read_more{
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  };
+}
+
+.read_more a {
+  text-decoration:none;
+  background-color: $black;
+  color: $white;
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 15px;
+  &:hover{
+    color: $white;
+    text-decoration: none;
+  }
+}

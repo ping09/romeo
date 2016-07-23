@@ -1,15 +1,16 @@
-.about-me{
+#about-me{
   background-color: #f7f7f1;
   height: 782px;
   @include box-sizing;
 }
 .about_me_title{
     padding: {
-    top:152px;
+    top:80px;
     bottom: 42px;
   }
   h2{
     text-align: center;
+    font-weight: 700;
     span{
       font-size: 40px;
       color:$black;

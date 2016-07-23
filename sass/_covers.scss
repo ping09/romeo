@@ -1,5 +1,4 @@
-.covers .container{
-  padding-bottom: 150px;
+#covers .container{
   .col-md-12{
     padding: {
       left: 0;
@@ -28,6 +27,7 @@
     span{
       font-size: 40px;
       color:$black;
+      font-weight: 700;
       text-transform: uppercase;
       font-family: 'Open Sans', sans-serif;
       position: relative;

@@ -1,0 +1,75 @@
+.as_seen_in{
+  padding-bottom: 50px;
+}
+.as_seen_in .container{
+  .asi_title{
+    padding: {
+    top:80px;
+    bottom: 42px;
+    }
+    h2{
+      font-size: 40px;
+      color:$black;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      span{
+        font-weight: 700;
+        padding-bottom: 10px;
+        position: relative;
+        font-size: 40px;
+        color:$black;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        &::before{
+          content:"";
+          position: absolute;
+          bottom:50%;
+          left: 105%;
+          width: 80px;
+          height: 3px;
+          background-color: $black;
+        }
+      }
+    }
+    h3{
+      padding-left: 8%;
+      font-size: 40px;
+      font-weight: 700;
+      color:$black;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+  .telegraph, .aljazzera{
+    img{
+      @include filter(grayscale(100%));
+    }
+  }
+  .telegraph{
+    padding-top: 20px;
+    a{
+      @include sink();
+    }
+  }
+  .aljazzera {
+    padding-top: 40px;
+    a{
+      @include float-shadow();
+    }
+  }
+  .newage{
+    padding-top: 90px;
+    a{
+      text-decoration: none;
+      font-size: 40px;
+      text-transform: uppercase;
+      background-color: $black;
+      color: $white;
+      padding: 10px 15px;
+      font-weight: 700;
+      @include float();
+    }
+  }
+
+}

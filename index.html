@@ -11,7 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        
+        <link rel="stylesheet" href="js/lib/fakeLoader/fakeLoader.css" type="text/css" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -19,55 +20,47 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-         <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+         <link rel="stylesheet" href="css/lib/animate.css/animate.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
          <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+    <div id="fakeLoader"></div>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="page">
-      <div class="home">
+      <div id="home">
         <div class="container">
           <div class="col-md-12 col-xs-12">
             <div class="nav_bar">
               <div class="menu-icon pull-right">
-                <div class="menu"></div>
+                <div class="hamburger hamburger--squeeze">
+                  <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-12 col-xs-12">
-            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 heading">
-              <div class="title">
-                <h1>Life is Short</h1>
-                <span>...So Am I!</span>
-              </div>
-            </div>
-            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
-              <nav>
-                <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#">Who Am I?</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Get In Touch</a></li>
+            <div class="main_content">
+              <div class="inner">
+                <h1 id="text01"><span>Magna Lorem</span><br> <span>Consequat</span></h1>
+                <hr id="divider01">
+                <p id="text02">Donec iaculis lorem metus, at euismod lorem et lobortis. Maecenas tincidunt posuere quam, eget tempus rutrum non. Ut tincidunt amet ipsum.</p>
+                <ul class="icons" id="icons01">
+                  <li><a class="fa fa-twitter" href="#"></a></li>
+                  <li><a class="fa fa-facebook" href="#"></a></li>
+                  <li><a class="fa fa-linkedin" href="#"></a></li>
                 </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="col-md-12 col-xs-12">
-            <div class="col-md-6 col-xs-12 col-xs-12">
-              <div class="social_menu">
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-              </div>
-            </div>
-            <div class="col-md-6 col-xs-12 col-xs-12">
-              <div class="chevron">
-                <i class="fa fa-chevron-down"></i>
+                <div class="chevron">
+                  <a href="#about-me" class="fa fa-chevron-down"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -75,15 +68,18 @@
       </div><!--end of home-->
       <div class="mobile-nav">
         <nav>
+          <hr>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">Who Am I?</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Get In Touch</a></li>
+            <li><a href="#covers">Covers</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#git">Get In Touch</a></li>
           </ul>
+          <hr>
         </nav>
       </div>
-      <div class="about-me">
+      <div id="about-me">
         <div class="container">
           <div class="col-md-12 text-center">
             <div class="about_me_title">
@@ -96,7 +92,7 @@
                 <img src="img/avatar.png"  class="img-responsive" alt="">
               </div>
               <div class="am_inner_content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore texercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p>A Dhaka based reporter & producer. With graduation in international relations from Dhaka University, I started my reporting career with a local English news agency in Dhaka in early 2008 and covered different national and international events. Moved to New Age in November 2009.</p>
               </div>
             </div>
           </div>
@@ -112,22 +108,22 @@
           </div>
           <div class="col-md-4 col-xs-12 col-sm-12 text-center">
             <div class="telegraph">
-              <a href="#"><img src="http://s.telegraph.co.uk/graphics/projects/queen-elizabeth-royal-style-icon/media/theme/tele-logo.png"  alt="telegraph"></a>
+              <a href="http://www.telegraph.co.uk/authors/muktadir-rashid/"><img src="http://s.telegraph.co.uk/graphics/projects/queen-elizabeth-royal-style-icon/media/theme/tele-logo.png"  alt="telegraph"></a>
             </div>
           </div>
           <div class="col-md-4 col-xs-12 col-sm-12 text-center">
             <div class="aljazzera">
-              <a href="#"><img src="http://www.aljazeera.com/mrItems/Assets/Images/NewArticle/a-j-e-overlay-copy.png" alt=""></a>
+              <a href="http://www.aljazeera.com/profile/muktadir-rashid.html"><img src="http://www.aljazeera.com/mrItems/Assets/Images/NewArticle/a-j-e-overlay-copy.png" alt=""></a>
             </div>
           </div>
           <div class="col-md-4 col-xs-12 col-sm-12 text-center">
             <div class="newage">
-              <a href="#">New Age</a>
+              <a href="http://newagebd.net/">New Age</a>
             </div>
           </div>
         </div>
       </div><!--end of as_seen_in-->
-      <div class="covers">
+      <div id="covers">
         <div class="container">
           <div class="col-md-12 col-xs-12 text-center">
             <div class="covers_title">
@@ -236,15 +232,15 @@
           </div>
         </div>
       </div><!--end of covers-->
-      <div class="blog">
+      <div id="blog">
         <div class="container">
           <div class="col-md-12 col-xs-12 text-center">
             <div class="blog_title">
               <h2><span>The</span></h2>
               <h3>Blog!</h3>
             </div>
-          </div>
-        </div>
+          </div><!--end of col-md-12-->
+        </div><!--end of container-->
         <div class="post">
           <div class="col-md-6">
             <div class="ft_img">
@@ -298,14 +294,116 @@
               </div>
             </div>
           </div>
-      </div>
-    </div><!--end of page-->
+      </div><!--end of post-->
+      <div class="container">
+        <div class="col-md-12 col-xs-12 text-center">
+          <div class="read_more">
+            <a href="/blog.html">Read More</a>
+          </div>
+        </div>
+      </div><!--end of container-->
+    </div><!--end of blog-->
+    <div class="get_in_touch" id="git">
+      <div class="container">
+        <div class="col-md-12 col-xs-12 text-center">
+          <div class="contact_title">
+            <h2><span>Get In</span></h2>
+            <h3>Touch!</h3>
+          </div>
+        </div><!--end of col-md-12-->
+        <div class="col-md-4 col-xs-12">
+          <div class="address">
+            <div class="address_title">
+              <h6>Location</h6>
+            </div>
+            <div class="contact_info">
+              <li>
+                <i class="glyphicon glyphicon-map-marker">
+                </i>
+                <span>Dhaka, Bangladesh</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>romeo27oct@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <span>(+880)-1711443527</span>
+              </li>
+            </div>
+          </div><!--end of address-->
+          <div class="modal_form">
+            <div class="button">
+              <a  class="hvr-icon-forward" id="demo02" href="#modal-02">Say Hello </a>
+            </div>
+            <div id="modal-02">
+                <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+                <div class="container">
+                  <div class="modal_close">
+                    <div  id="btn-close-modal" class="close-modal-02">
+                      <div class="close_container">
+                        <div class="close_inner">
+                          <div class="close_icon">  </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-content">
+                  <div class="container">
+                    <div class="form">
+                      <form>
+                        <fieldset class="form-group">
+                          <label for="exampleInputEmail1">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Full Name">
+                        </fieldset>
+                        <fieldset class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                          <small class="text-muted">I'll never share your email with anyone else.</small>
+                        </fieldset>
+                        <fieldset class="form-group">
+                          <label for="exampleTextarea">Message</label>
+                          <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Type Your Message Here"></textarea>
+                        </fieldset>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div><!--end form-->
+                  </div>
+                </div>
+            </div>
+          </div><!--end of modal form-->
+          <div class="address_social_menu">
+            <li><a href="https://twitter.com/muktadirnewage"><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+          </div><!--end of footer social menu-->
+        </div><!--end of col-md-6-->
+        <div class="col-md-8 col-xs-12 map">
+          <div id="map" style="width:100%; height: 400px;">
+          </div>
+        </div><!--end of col-md-6-->
+      </div><!--end of container-->
+    </div><!--end of get in touch section-->
+    <footer>
+      <div class="container">
+        <div class="col-md-12 text-center">
+          <div class="legal">
+            <h6>&copy; 2016 Muktadir Rashid</h6>
+          </div>
+        </div>
+      </div><!--end of container-->
+    </footer><!--end of footer-->
+  </div><!--end of page-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <script type="text/javascript" src="js/lib/fakeLoader/fakeLoader.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
+        <script src="js/lib/animatedModal.js-master/animatedModal.min.js" charset="utf-8"></script>
+        <script src="js/lib/particles.js/particles.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js" charset="utf-8"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

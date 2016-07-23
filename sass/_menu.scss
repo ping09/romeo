@@ -1,95 +1,77 @@
-.page .home{
-  background: {
-    image: url('../img/background.jpg');
-    size: cover;
-    attachment: fixed;
-    repeat: no-repeat;
-  }
-  color: $white;
-  .col-md-6, .col-md-12{
-  @include padding;
-  }
-}
-.page .home .container{
+.page #home .container{
   .col-md-12{
     .nav_bar{
       @include clearfix;
       padding-top: 60px;
       .menu-icon{
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
         text-align: center;
         cursor: pointer;
-      }
-
-      .menu-icon .menu{
-        width: 100%;
-        height: 2px;
-        margin-top: 10px;
-        position: relative;
-        &::after{
-          content: "";
-          top:0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          position: absolute;
-          background-color: $white;
-          @include transform(rotate(45deg));
-        }
-        &::before{
-          content: "";
-          top:0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          position: absolute;
-          background-color: $white;
-          @include transform(rotate(-45deg));
-        }
       }
      }
   }
 
 }
+.menu-icon{
+  position: fixed;
+  top:0;
+  right: 1%;
+  z-index: 1000;
+}
 
+
+
+
+/*
+ *overlay menu
+*/
 .mobile-nav{
+  
   position: fixed;
   top: 0;
   right: 0;
   width: 20%;
   height: 100%;
-  background-color: $white;
-  z-index: 100;
+  z-index:100;
   transform: translateX(100%);
-}
-// social menu
-.social_menu{
-box-sizing: border-box;
-color: $white;
+  background-color: hsla(100%, 100%, 100%, 0.8);
+  @include transition(all 1s $ease-out-quint);
 }
 
-.social_menu li {
-  list-style-type:none;
-  display: inline-block;
-  padding: 0px 10px;
-}
-.social_menu li a{
-  color: $white;
-  font-size: 20px;
-  @include float-shadow();
-}
-
-.chevron {
-  box-sizing: border-box;
-  .fa-chevron-down{
-    cursor: pointer;
-    font-size: 20px;
-    @include bob();
+.mobile-nav nav {
+  @include box-sizing();
+  margin: {
+      top: 20%;
+      left: 0;
+    };
+  ul {
+    list-style-type:none;
+    margin-left: 10%;
+    padding:0;
+  }
+  ul li a {
+    text-decoration:none;
+    color: $black;
+    padding: 10px 0px;
+    font-weight: 700;
+    @include underline-from-left();
+    @include transition(all 1s $ease-out-quint);
+    &:hover{
+      opacity: 0.9;
+    }
   }
 }
-
-
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0%, 0%, 0%, 0.5);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include transition(all 3s $ease-out-quint);
+}
 
 
 //media queries
@@ -98,7 +80,7 @@ color: $white;
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
-.page .home{
+.page #home{
   background: {
     image: url('../img/background.jpg');
     size: cover;
@@ -111,49 +93,12 @@ color: $white;
     padding-right: 15px;
   }
 }
-.page .home .container {
+.page #home .container {
   height: 100%;
   padding-right: 0px;
 }
-.page .home .container{
-  .col-md-12{
-    // .nav_bar{
-    //   @include clearfix;
-    //   padding-top: 30px;
-    //   .menu-icon{
-    //     width: 30px;
-    //     height: 30px;
-    //     text-align: center;
-    //     cursor: pointer;
-    //   }
-    //
-    //   .menu-icon .menu{
-    //     width: 100%;
-    //     height: 2px;
-    //     background-color: $white;
-    //     margin-top: 10px;
-    //     position: relative;
-    //     &::after{
-    //       content: "";
-    //       top:8px;
-    //       left: 0;
-    //       width: 100%;
-    //       height: 2px;
-    //       position: absolute;
-    //       background-color: $white;
-    //     }
-    //     &::before{
-    //       content: "";
-    //       top:-8px;
-    //       left: 0;
-    //       width: 100%;
-    //       height: 2px;
-    //       position: absolute;
-    //       background-color: $white;
-    //     }
-    //   }
-    // }
-  }
+.page #home .container{
+
 
 }
 
