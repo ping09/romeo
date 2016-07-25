@@ -10,7 +10,6 @@ const home = {
     this.$overlay = '<div id="particle"></div>';
     $(this.$home).append(this.$overlay);
     
-    
   },
   // set home section height as full window height
   setwindowHeight () {
@@ -228,13 +227,6 @@ const smoothScroll = {
     this.render();
   }
 }
-
-$("#fakeLoader").fakeLoader({
-  timeToHide:10, //Time in milliseconds for fakeLoader disappear
-zIndex:"2000",//Default zIndex
-spinner:"spinner6",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-bgColor:"#2ecc71", //Hex, RGB or RGBA colors
-})
 
 
 $(function () {
