@@ -26,7 +26,7 @@ const home = {
   particlesJS(id, {
   "particles": {
     "number": {
-      "value": 70,
+      "value": 80,
       "density": {
         "enable": true,
         "value_area": 800
@@ -67,7 +67,7 @@ const home = {
     },
     "line_linked": {
       "enable": true,
-      "distance": 100,
+      "distance": 70,
       "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
@@ -241,7 +241,7 @@ $(function () {
       modalTarget:'modal-02',
       animatedIn: 'slideInUp',
       animatedOut: 'bounceOutDown',
-      color:'rgb(57, 190, 185)',
+      color:'#fff',
   });
   $('.hamburger').on('click', function() {
     if ($(this).hasClass('is-active')) {
