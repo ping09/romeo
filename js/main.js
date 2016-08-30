@@ -166,8 +166,8 @@ const googleMap = {
   	];
     this.options ={
   		center : {
-  			lat: 23.8223,
-  			lng: 90.3654,
+  			lat: 23.7623913,
+  			lng: 90.3951376,
   		},
   		zoom: 12,
   		scrollwheel: false,
@@ -235,8 +235,6 @@ $(function () {
   googleMap.render()
   smoothScroll.init();
   
-
-
   $("#demo02").animatedModal({
       modalTarget:'modal-02',
       animatedIn: 'slideInUp',
