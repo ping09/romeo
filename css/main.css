@@ -1,12 +1,24 @@
+@import "https://fonts.googleapis.com/css?family=Baloo+Chettan";
 @font-face {
   font-family: 'Helvetica Neue';
   src: url("HelveticaNeueBold.ttf") format("ttf"); }
+@font-face {
+  font-family: Gotham;
+  src: url("../fonts/GothamRoundedBold_21016.ttf"); }
+@font-face {
+  font-family: Oduda;
+  src: url("../fonts/Oduda-Bold-Demo.otf"); }
+@font-face {
+  font-family: Bariolr;
+  src: url("../fonts/bariol_regular-webfont.ttf"); }
+@font-face {
+  font-family: Bariol_Regular;
+  src: url("../fonts/Bariol_Regular.otf"); }
 body {
   overflow-x: hidden;
   height: 100%;
   padding: 0px !important;
-  margin: 0px !important;
-  font-family: 'Lato', 'Open Sans'; }
+  margin: 0px !important; }
 
 h1, .h1,
 h2, .h2,
@@ -15,9 +27,14 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-size: 25px;
-  font-family: 'Open Sans';
+  font-family: Gotham;
   margin: 0;
   padding: 0; }
+
+h2 {
+  font-family: Gotham; }
+  h2 span {
+    font-family: Gotham; }
 
 .container {
   padding-top: 0px;
@@ -4093,7 +4110,7 @@ h6, .h6 {
 
 .inner #text01 {
   color: #FFFFFF;
-  font-family: 'Montserrat';
+  font-family: Gotham;
   font-size: 2.75em;
   line-height: 1.125;
   font-weight: 400; }
@@ -4118,6 +4135,7 @@ h6, .h6 {
 
 .inner p {
   display: block;
+  font-family: Gotham;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
@@ -4342,6 +4360,7 @@ iPad 3
     padding: 0; }
   .mobile-nav nav ul li a {
     text-decoration: none;
+    font-family: Gotham;
     color: #3b3a36;
     padding: 10px 0px;
     font-weight: 700;
@@ -4555,8 +4574,8 @@ iPad 3
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */ }
 #about-me {
-  background-color: #f7f7f1;
-  height: 782px;
+  background-color: #FFF;
+  height: 700px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -4570,9 +4589,9 @@ iPad 3
     font-weight: 700; }
     .about_me_title h2 span {
       font-size: 40px;
-      color: #222222;
+      color: #333333;
       text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif;
+      font-family: Oduda;
       position: relative; }
       .about_me_title h2 span:after {
         content: "";
@@ -4581,7 +4600,7 @@ iPad 3
         right: 100%;
         width: 80px;
         height: 3px;
-        background-color: #222222; }
+        background-color: #333333; }
 
 .about-me-content {
   -webkit-box-sizing: border-box;
@@ -4593,16 +4612,13 @@ iPad 3
     .about-me-content .avatar img {
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
   .about-me-content .am_inner_content {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding-left: 55%;
-    text-align: justify; }
+    padding-top: 15%; }
     .about-me-content .am_inner_content p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
-      color: #222222;
-      font-weight: 600;
+      font-family: Oduda;
+      text-align: justify;
+      font-size: 17px;
+      color: #999;
+      font-weight: normal;
       line-height: 1.5; }
 
 .as_seen_in {
@@ -4613,7 +4629,7 @@ iPad 3
   padding-bottom: 42px; }
   .as_seen_in .container .asi_title h2 {
     font-size: 40px;
-    color: #222222;
+    color: #333333;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700; }
@@ -4622,22 +4638,22 @@ iPad 3
       padding-bottom: 10px;
       position: relative;
       font-size: 40px;
-      color: #222222;
+      color: #333333;
       text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif; }
+      font-family: Gotham; }
       .as_seen_in .container .asi_title h2 span::before {
         content: "";
         position: absolute;
-        bottom: 50%;
-        left: 105%;
+        bottom: 60%;
+        left: 102%;
         width: 80px;
-        height: 3px;
-        background-color: #222222; }
+        height: 5px;
+        background-color: #333333; }
   .as_seen_in .container .asi_title h3 {
     padding-left: 8%;
     font-size: 40px;
     font-weight: 700;
-    color: #222222;
+    color: #333333;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif; }
 .as_seen_in .container .telegraph img, .as_seen_in .container .aljazzera img {
@@ -4657,12 +4673,10 @@ iPad 3
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out; }
+    transition-property: transform; }
     .as_seen_in .container .telegraph a:hover, .as_seen_in .container .telegraph a:focus, .as_seen_in .container .telegraph a:active {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px); }
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
 .as_seen_in .container .aljazzera {
   padding-top: 40px; }
   .as_seen_in .container .aljazzera a {
@@ -4674,44 +4688,21 @@ iPad 3
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
-    position: relative;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform; }
-    .as_seen_in .container .aljazzera a:before {
-      pointer-events: none;
-      position: absolute;
-      z-index: -1;
-      content: '';
-      top: 100%;
-      left: 5%;
-      height: 10px;
-      width: 90%;
-      opacity: 0;
-      background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
-      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
-      /* W3C */
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-property: transform, opacity;
-      transition-property: transform, opacity; }
     .as_seen_in .container .aljazzera a:hover, .as_seen_in .container .aljazzera a:focus, .as_seen_in .container .aljazzera a:active {
-      -webkit-transform: translateY(-5px);
-      transform: translateY(-5px);
-      /* move the element up by 5px */ }
-      .as_seen_in .container .aljazzera a:hover:before, .as_seen_in .container .aljazzera a:focus:before, .as_seen_in .container .aljazzera a:active:before {
-        opacity: 1;
-        -webkit-transform: translateY(5px);
-        transform: translateY(5px);
-        /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */ }
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
 .as_seen_in .container .newage {
   padding-top: 90px; }
   .as_seen_in .container .newage a {
+    font-family: Oduda;
     text-decoration: none;
     font-size: 40px;
     text-transform: uppercase;
-    background-color: #222222;
+    background-color: #333333;
     color: #fff;
     padding: 10px 15px;
     font-weight: 700;
@@ -4726,12 +4717,10 @@ iPad 3
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out; }
+    transition-property: transform; }
     .as_seen_in .container .newage a:hover, .as_seen_in .container .newage a:focus, .as_seen_in .container .newage a:active {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px); }
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
 
 #covers .container .col-md-12 {
   padding-left: 0;
@@ -4750,19 +4739,19 @@ iPad 3
     text-align: center; }
     .covers_title h2 span {
       font-size: 40px;
-      color: #222222;
+      color: #333333;
       font-weight: 700;
       text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif;
+      font-family: Gotham;
       position: relative; }
       .covers_title h2 span:after {
         content: "";
         position: absolute;
         bottom: 50%;
-        right: 100%;
+        right: 105%;
         width: 80px;
-        height: 3px;
-        background-color: #222222; }
+        height: 5px;
+        background-color: #333333; }
 
 .flip-container {
   -webkit-perspective: 1000;
@@ -4788,7 +4777,7 @@ iPad 3
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-    color: #222222;
+    color: #333333;
     border-radius: none; }
     .flip-container .card:hover {
       transform: rotateY(180deg); }
@@ -4836,12 +4825,10 @@ iPad 3
         transition-duration: 0.3s;
         -webkit-transition-property: transform;
         transition-property: transform;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-        font-family: 'PT Sans Narrow', sans-serif; }
+        font-family: Gotham; }
         .flip-container .card .back li:hover, .flip-container .card .back li:focus, .flip-container .card .back li:active {
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px); }
+          -webkit-transform: scale(0.9);
+          transform: scale(0.9); }
 
 #blog::after, .post::after {
   clear: both;
@@ -4853,28 +4840,28 @@ iPad 3
   padding-bottom: 42px; }
   #blog .blog_title h2 {
     font-size: 40px;
-    color: #222222;
+    color: #333333;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Gotham;
     font-weight: 700; }
     #blog .blog_title h2 span {
       padding-bottom: 10px;
       position: relative;
       font-size: 40px;
-      color: #222222;
+      color: #333333;
       text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif; }
+      font-family: Gotham; }
       #blog .blog_title h2 span::before {
         content: "";
         position: absolute;
-        bottom: 50%;
+        bottom: 60%;
         left: 105%;
         width: 80px;
-        height: 3px;
-        background-color: #222222; }
+        height: 5px;
+        background-color: #333333; }
   #blog .blog_title h3 {
     font-size: 40px;
-    color: #222222;
+    color: #333333;
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
@@ -4910,11 +4897,11 @@ iPad 3
   padding: 0;
   color: #000;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: Gotham; }
 #blog .post_title p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  font-family: Oduda;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 18px;
   margin: 0;
   padding-top: 10px; }
@@ -4998,9 +4985,9 @@ iPad 3
 
 .read_more a {
   text-decoration: none;
-  background-color: #222222;
-  color: #fff;
-  font-family: 'Source Sans Pro';
+  background-color: #333333;
+  color: #e5e5e5;
+  font-family: Oduda;
   text-transform: uppercase;
   font-size: 20px;
   padding: 10px 15px; }
@@ -5022,30 +5009,30 @@ iPad 3
   padding-bottom: 42px; }
   .get_in_touch .contact_title h2 {
     font-size: 40px;
-    color: #222222;
+    color: #333333;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif; }
+    font-family: Gotham; }
     .get_in_touch .contact_title h2 span {
       padding-bottom: 10px;
       position: relative;
       font-size: 40px;
-      color: #222222;
+      color: #333333;
       text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif; }
+      font-family: Gotham; }
       .get_in_touch .contact_title h2 span::before {
         content: "";
         position: absolute;
-        bottom: 50%;
+        bottom: 60%;
         left: 105%;
         width: 60px;
-        height: 3px;
-        background-color: #222222; }
+        height: 5px;
+        background-color: #333333; }
   .get_in_touch .contact_title h3 {
     font-size: 40px;
-    color: #222222;
+    color: #333333;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Gotham;
     padding-left: 11%;
     font-weight: 700; }
 
@@ -5054,7 +5041,7 @@ iPad 3
   .address .address_title h6 {
     text-transform: uppercase;
     font-size: 30px;
-    color: #222222;
+    color: #333333;
     font-weight: 700; }
 
 .contact_info li {
@@ -5066,7 +5053,7 @@ iPad 3
     font-size: 25px; }
   .contact_info li span {
     font-size: 15px;
-    color: #222222;
+    color: #333333;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 1px; }
 
@@ -5083,7 +5070,7 @@ iPad 3
 
 .address_social_menu {
   box-sizing: border-box;
-  color: #222222;
+  color: #333333;
   padding-top: 5%; }
 
 .address_social_menu li {
@@ -5094,7 +5081,7 @@ iPad 3
 .address_social_menu li a {
   text-align: center;
   border-radius: 2px;
-  color: #222222;
+  color: #333333;
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
@@ -5211,7 +5198,7 @@ input[type="placeholder"] {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .btn-primary:hover {
     background: #596585;
-    color: #222222; }
+    color: #333333; }
 
 footer {
   -webkit-box-sizing: border-box;

@@ -2,7 +2,7 @@
 //object contain header dom elements and functions for animation
 const home = {
   // caching the dom
-  elem () {
+  elem :function () {
     this.$home = $("#home")
     this.height = $(window).height()
     this.$menu = this.$home.find('.menu-icon')
@@ -12,16 +12,16 @@ const home = {
     
   },
   // set home section height as full window height
-  setwindowHeight () {
+  setwindowHeight: function () {
     this.$home.css({
       'height' : this.height,
     });
-    this.$intro_header.css({
+     this.$intro_header.css({
       'height' : this.height,
     });
 
   },
-  pjs (id) {
+  pjs: function (id) {
     
   particlesJS(id, {
   "particles": {
@@ -66,7 +66,7 @@ const home = {
       }
     },
     "line_linked": {
-      "enable": true,
+      "enable": false,
       "distance": 70,
       "color": "#ffffff",
       "opacity": 0.4,
@@ -91,7 +91,7 @@ const home = {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": ["grab"]
       },
       "onclick": {
@@ -132,23 +132,44 @@ const home = {
   // menu icon animation
 
   // initialize all methods
-  init () {
+  init:function () {
     this.elem()
     this.setwindowHeight()
     this.pjs("particle")
 
   },
   // rendering all methods
-  render () {
+  render:function  () {
     this.init()
   }
 }
 
+var  article = {
+  domElement: function() {
+    this.$article = $("#blog");
+    this.$button = $(".read_more");
+  },
+  style: function() {
+    this.$button.on('click', function(e) {
+      e.preventDefault()
+      window.open('https://muckrack.com/muktadir-rashid/articles', '_blank')
+    })
+  },
+  init: function () {
+    this.domElement();
+    this.style();
+  }, 
+  render: function( ){
+    this.init();
+  }
+}
+
+
 const googleMap = {
-  domElement () {
+  domElement:function () {
     this.element= document.getElementById("map")
   },
-  mapElements () {
+  mapElements:function () {
     this.style =[
   		{
   			featureType: 'all',
@@ -178,7 +199,7 @@ const googleMap = {
       draggable: true,
   	};
   },
-  Marker() {
+  Marker: function() {
     this.marKer = {
     position: this.options.center,
   	icon: {
@@ -188,12 +209,12 @@ const googleMap = {
   		animation:google.maps.Animation.BOUNCE
     }
   },
-  map () {
+  map:function () {
   	this.map = new google.maps.Map(this.element, this.options)
   	this.marker=new google.maps.Marker(this.marKer);
   	this.marker.setMap(this.map)
   },
-  render () {
+  render:function () {
     this.domElement()
     this.mapElements()
     this.Marker()
@@ -202,12 +223,12 @@ const googleMap = {
 };
 
 const smoothScroll = {
-  domCaching () {
+  domCaching:function () {
     this.$mobileNav= $(".mobile-nav");
     this.$anchor = this.$mobileNav.find('a')
     this.chevron = $('.chevron').find('a')
   },
-  scroll(e) {
+  scroll: function(e) {
     e.preventDefault()
     if (e.target.hash !== "") {
       $('html, body').animate({
@@ -217,12 +238,12 @@ const smoothScroll = {
       })
     }
   },
-  render() {
+  render: function() {
     this.$anchor.on('click', this.scroll.bind(this));
     this.chevron.on('click', this.scroll.bind(this))
   
   },
-  init () {
+  init: function () {
     this.domCaching();
     this.render();
   }
@@ -231,8 +252,9 @@ const smoothScroll = {
 
 $(function () {
  
-  home.render()
-  googleMap.render()
+  home.render();
+  article.render();
+  googleMap.render();
   smoothScroll.init();
   
   $("#demo02").animatedModal({

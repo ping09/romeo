@@ -20,14 +20,14 @@
         font-size: 40px;
         color:$black;
         text-transform: uppercase;
-        font-family: 'Open Sans', sans-serif;
+        font-family: Gotham;
         &::before{
           content:"";
           position: absolute;
-          bottom:50%;
-          left: 105%;
+          bottom:60%;
+          left: 102%;
           width: 80px;
-          height: 3px;
+          height: 5px;
           background-color: $black;
         }
       }
@@ -49,18 +49,19 @@
   .telegraph{
     padding-top: 20px;
     a{
-      @include sink();
+      @include grow();
     }
   }
   .aljazzera {
     padding-top: 40px;
     a{
-      @include float-shadow();
+      @include grow();
     }
   }
   .newage{
     padding-top: 90px;
     a{
+      font-family: Oduda;
       text-decoration: none;
       font-size: 40px;
       text-transform: uppercase;
@@ -68,7 +69,7 @@
       color: $white;
       padding: 10px 15px;
       font-weight: 700;
-      @include float();
+      @include grow();
     }
   }
 

@@ -1,6 +1,6 @@
 #about-me{
-  background-color: #f7f7f1;
-  height: 782px;
+  background-color: #FFF;
+  height: 700px;
   @include box-sizing;
 }
 .about_me_title{
@@ -15,7 +15,7 @@
       font-size: 40px;
       color:$black;
       text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif;
+      font-family: Oduda;
       position: relative;
       &:after{
         content:"";
@@ -40,16 +40,14 @@
   }
 
   .am_inner_content {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding-left: 55%;
-    text-align: justify;
+    
+  padding-top: 15%;
     p{
-      font-family:  'Open Sans', sans-serif;
-      font-size: 15px;
-      color: $black;
-      font-weight: 600;
+      font-family: Oduda;
+      text-align: justify;
+      font-size: 17px;
+      color: #999;
+      font-weight: normal;
       line-height: 1.5;
     }
   }

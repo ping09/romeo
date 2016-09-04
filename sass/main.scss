@@ -3,6 +3,27 @@
   font-family: 'Helvetica Neue';
   src:  url('HelveticaNeueBold.ttf') format('ttf'),
 }
+
+@font-face {
+  font-family: Gotham;
+  src:  url('../fonts/GothamRoundedBold_21016.ttf');
+  
+}
+
+@font-face {
+  font-family: Oduda;
+  src:  url('../fonts/Oduda-Bold-Demo.otf');
+}
+@font-face {
+  font-family: Bariolr;
+  src:  url('../fonts/bariol_regular-webfont.ttf');
+}
+@font-face {
+  font-family: Bariol_Regular;
+  src:  url('../fonts/Bariol_Regular.otf');
+}
+
+@import 'https://fonts.googleapis.com/css?family=Baloo+Chettan';
 @import "../bourbon/bourbon";
 @import "_mixin.scss";
 @import "_global.scss";
