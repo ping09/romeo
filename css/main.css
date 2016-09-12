@@ -4617,8 +4617,9 @@ iPad 3
     .about-me-content .am_inner_content p {
       font-family: 'Rasa';
       text-align: justify;
-      font-size: 17px;
-      color: #999;
+      font-size: 20px;
+      letter-spacing: -1px;
+      color: #000;
       font-weight: normal;
       line-height: 1.5; }
 
