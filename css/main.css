@@ -4658,9 +4658,6 @@ iPad 3
     color: #333333;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif; }
-.as_seen_in .container .telegraph img, .as_seen_in .container .aljazzera img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
 .as_seen_in .container .telegraph {
   padding-top: 20px; }
   .as_seen_in .container .telegraph a {

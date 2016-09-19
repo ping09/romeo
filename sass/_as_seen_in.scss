@@ -41,11 +41,11 @@
       font-family: 'Open Sans', sans-serif;
     }
   }
-  .telegraph, .aljazzera{
-    img{
-      @include filter(grayscale(100%));
-    }
-  }
+  // .telegraph, .aljazzera{
+  //   img{
+  //     @include filter(grayscale(100%));
+  //   }
+  // }
   .telegraph{
     padding-top: 20px;
     a{
